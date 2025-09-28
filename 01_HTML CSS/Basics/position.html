@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blue;
+        margin: 10px;
+      }
+      .box-1 {
+        position: static;
+      }
+      .box-2 {
+        position: relative;
+        left: 50px;
+        top: 120px;
+        /* bottom: 130px; */
+      }
+      .box-3 {
+        position: fixed;
+        top: 200px;
+        right: 0;
+        z-index: 0;
+      }
+      .box-4 {
+        position: sticky;
+        top: 20px;
+        /* left: 200px; */
+        z-index: 2;
+      }
+      .box-5 {
+        width: 500px;
+        height: 500px;
+        background-color: coral;
+        position: relative;
+      }
+      .box-6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .list {
+        /* position: relative; */
+        /* z-index: 10; */
+        position: sticky;
+        top: 150px;
+        background-color: lightgray;
+      }
+      h1 {
+        position: fixed;
+        left: 300px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position Property</h1>
+    <div class="box box-1">Static</div>
+    <div class="box box-2">Relative</div>
+    <div class="box box-3">Fixed</div>
+    <div class="box box-4">Sticky</div>
+    <div class="box box-5">
+      BOX
+      <div class="box box-6">Absolute</div>
+    </div>
+    <hr />
+    <h3>Short Description</h3>
+    <ol class="list">
+      <li>
+        <strong>Static:</strong> Default position; elements follow normal
+        document flow. No special positioning applied.
+      </li>
+      <li>
+        <strong>Relative:</strong> Positioned relative to its normal position.It
+        can be moved from its normal document flow using top, right, bottom, and
+        left.
+      </li>
+      <li>
+        <strong>Absolute:</strong> Positioned relative to the nearest positioned
+        ancestor (not static). Removed from normal document flow. parent must be
+        relative.
+      </li>
+      <li>
+        <strong>Fixed:</strong> Positioned relative to the viewport. Stays in
+        the same place even during scrolling. Removed from normal document flow.
+      </li>
+      <li>
+        <strong>Sticky:</strong> Toggles between relative and fixed, depending
+        on the scroll position. It is treated as relative until it crosses a
+        specified threshold, then it is treated as fixed.
+      </li>
+      <li>
+        <strong>z-index:</strong> Controls the vertical stacking order of
+        elements that overlap. Higher values are in front of lower values. Only
+        works on positioned elements (relative, absolute, fixed, sticky).
+      </li>
+    </ol>
+    <hr />
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat
+      suscipit beatae provident vel. Minus provident architecto omnis. Esse
+      maiores laudantium odit voluptatibus dicta est suscipit exercitationem
+      architecto, voluptates recusandae. Minus reprehenderit, id, deserunt
+      tempora ratione sunt dicta ab modi pariatur molestias facilis provident
+      eum tenetur itaque repudiandae qui quo ad, saepe optio eaque quod deleniti
+      corporis nobis consectetur? Repudiandae voluptas expedita quas voluptatum
+      quam doloremque non earum aliquam animi magnam ex repellendus eligendi
+      tempora amet aut quae, porro dolorem nulla possimus, cum quod cumque, iure
+      corrupti! Sunt, maxime. Repellat ipsum omnis quisquam obcaecati qui
+      aliquam suscipit voluptatem molestiae inventore praesentium dolore
+      quibusdam ipsam sapiente velit corporis, a porro voluptates vel deserunt
+      enim ex corrupti. Omnis sapiente totam, labore officia eius error facere
+      suscipit ipsa recusandae optio, sed illo voluptatem culpa! Esse qui odit
+      temporibus soluta cum deleniti eius. Porro omnis sit laborum incidunt
+      aliquam, expedita possimus quae perspiciatis tenetur inventore voluptatem.
+      Rem tenetur obcaecati ut quo ea earum animi porro, amet sapiente unde
+      deserunt ducimus autem odio non beatae est soluta recusandae hic dolorem
+      tempora voluptatem vel voluptas enim temporibus. Recusandae, culpa iste.
+      Mollitia ipsam nostrum hic doloremque. Inventore mollitia ullam nemo
+      assumenda sed est obcaecati. Fugiat eum sapiente minima vitae, perferendis
+      cumque blanditiis quo numquam, voluptatem commodi deleniti nihil quibusdam
+      et ex consectetur error inventore, aliquid fugit ducimus fuga
+      reprehenderit quos recusandae! Esse, quod recusandae optio beatae modi
+      fugiat minus, quidem, similique error impedit iusto porro officia vero
+      odit repellat eveniet consequatur necessitatibus dicta voluptate corporis
+      dignissimos. Culpa fugiat saepe molestias, ipsam deserunt eveniet
+      blanditiis ex reiciendis excepturi amet, laudantium labore optio, nesciunt
+      autem nihil fugit iste esse nulla ea expedita quia quidem tenetur.
+      Blanditiis facilis labore excepturi repellendus nemo eius officia amet
+      deleniti minus facere odit culpa omnis repellat animi incidunt, cupiditate
+      delectus laborum quisquam neque tempora.
+    </p>
+  </body>
+</html>

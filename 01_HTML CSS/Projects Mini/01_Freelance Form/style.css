@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+  /* border: 2px solid red; */
+}
+.card {
+  width: 400px;
+  border: 1px solid black;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgb(53, 61, 69);
+}
+h1 {
+  font-size: 28px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 20px;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 20px 20px;
+}
+.input {
+  text-align: center;
+}
+input {
+  display: inline-block;
+  height: 40px;
+  width: 80%;
+  margin-top: 20px;
+}
+button {
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  height: 40px;
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  /* text-align: center; */
+  border: none;
+}
